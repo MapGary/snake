@@ -12,3 +12,19 @@ body {
 canvas {
     border: 1px solid white;
 }
+.blocks {
+    display: flex; 
+    justify-content: center;
+    align-items: start;
+    margin: 5px;
+}
+    
+.block {
+    /*padding: 24px;*/
+    width: 200px;
+    height: 50px;
+    border-radius: 1px;    
+    background: rgb(145, 157, 159);
+    font-family: inherit;
+    align-items: center;
+}
