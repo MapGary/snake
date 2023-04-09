@@ -79,6 +79,7 @@ function loop() {
       if (cell.x === apple.x && cell.y === apple.y) {
         snake.maxCells++;
         appleCount++
+        countEl.innerHTML = appleCount;
         apple.x = getRandomInt(0, 25) * grid;
         apple.y = getRandomInt(0, 25) * grid;
       }
