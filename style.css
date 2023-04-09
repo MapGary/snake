@@ -22,9 +22,14 @@ canvas {
 .block {
     /*padding: 24px;*/
     width: 200px;
-    height: 50px;
+    height: 40px;
     border-radius: 1px;    
-    background: rgb(145, 157, 159);
-    font-family: inherit;
+    background: rgb(113, 121, 122);
+    display: flex;
     align-items: center;
+    justify-content: center
+}
+h3 {
+    font-family: sans-serif;
+    color: rgb(246, 245, 245);
 }
