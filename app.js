@@ -7,7 +7,7 @@ let grid = 16;
 // Служебная переменная, которая отвечает за скорость змейки
 let count = 0;
 let appleCount = 0;
-
+let paused = false;
 let countEl = document.querySelector('#count')
 // А вот и сама змейка
 let snake = {
@@ -36,6 +36,20 @@ let apple = {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
+
+document.addEventListener("keydown", function (e) {
+  let key = e.which;
+  if (key == "32") {
+    paused = true;
+    alert("Paused")
+  } 
+});
+document.addEventListener("keydown", function (e) {
+  let key = e.which;
+  if (key == "32" && paused == true) {
+    paused = false;
+  } 
+})
 
 // Игровой цикл — основной процесс, внутри которого будет всё происходить
 function loop() {
