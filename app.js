@@ -24,7 +24,7 @@ function getRandomInt(min, max) {
   
 function loop() {
     requestAnimationFrame(loop);
-    if (++count < 6) {
+    if (++count < 4) {
       return;
     }
     count = 0;
