@@ -85,12 +85,16 @@ function loop() {
       }
       for (var i = index + 1; i < snake.cells.length; i++) {
         if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+          alert("Game over. Your score: " + appleCount + "\nTry again!");
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          appleCount = 0;
           snake.x = 160;
           snake.y = 160;
           snake.cells = [];
           snake.maxCells = 4;
           snake.dx = grid;
           snake.dy = 0;
+          snake.cells = []
           apple.x = getRandomInt(0, 25) * grid;
           apple.y = getRandomInt(0, 25) * grid;
         }
