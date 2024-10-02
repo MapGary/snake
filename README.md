@@ -1,4 +1,4 @@
-This project is a simple snake game written in JavaScript. Your task is to control the snake to eat food and grow. 🐍
+This project is a simple [Snake game](mapgary.github.io/snake/) written in JavaScript. Your task is to control the snake to eat food and grow. 🐍
 
 About features:
 
